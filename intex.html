@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    body {
+      background-color: rgb(86, 77, 86);
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      color: white;
+    }
+
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px;
+      background-color: rgb(50, 45, 50);
+    }
+
+    nav h1 {
+      margin: 0;
+    }
+
+    ul {
+      display: flex;
+      gap: 20px;
+      list-style: none;
+      margin: 0;
+      padding: 0;
+    }
+
+    ul li a {
+      text-decoration: none;
+      color: seashell;
+      font-weight: bold;
+    }
+
+    .about-section {
+      text-align: center;
+      padding: 40px;
+    }
+
+    .about-section h2 {
+      color: rgb(188, 188, 227);
+      font-weight: bold;
+      margin-bottom: 20px;
+    }
+
+    .about-section p {
+      max-width: 600px;
+      margin: 0 auto;
+      line-height: 1.6;
+    }
+
+    .project-section {
+      text-align: center;
+      padding: 40px;
+    }
+
+    .project-section h2 {
+      color: seashell;
+      margin-bottom: 30px;
+    }
+
+    .container {
+      display: flex;
+      justify-content: center;
+      gap: 40px;
+      flex-wrap: wrap;
+    }
+
+    .box {
+      width: 200px;
+      height: 300px;
+      background-color: rgb(62, 191, 62);
+      border: 2px solid rgb(237, 231, 231);
+      padding: 20px;
+      color: black;
+      text-align: center;
+      overflow: auto;
+    }
+  </style>
+</head>
+<body>
+  <nav>
+    <h1>Bishal Budha</h1>
+    <ul>
+      <li><a href="#about">About</a></li>
+      <li><a href="#project">Project</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <section id="about" class="about-section">
+    <h2>About</h2>
+    <p>
+      Lionel Messi is a world-renowned Argentine professional footballer, known for playing as a forward and currently captaining Major League Soccer club Inter Miami and the Argentina national team.
+    </p>
+  </section>
+
+  <section id="project" class="project-section">
+  <h2>My Project</h2>
+  <div class="container">
+    <div class="box">
+      <img src="https://media.newyorker.com/photos/64bc4330ef09d4a0e04cb249/3:4/w_1278,h_1704,c_limit/Rosen-Messi-Miami.jpg" alt="Football Image 1">
+      
+    </div>
+    <div class="box">
+      <img src="https://wallpapers.com/images/featured/messi-cool-hw5gwrkamjlbownt.jpg" alt="Football Image 2">
+      
+    </div>
+  </div>
+</section>
+</body>
+</html>
