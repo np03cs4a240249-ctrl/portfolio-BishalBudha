@@ -74,8 +74,8 @@
     }
 
     .box {
-      width: 200px;
-      height: 300px;
+      width: 600px;
+      height: 600px;
       background-color: rgb(62, 191, 62);
       border: 2px solid rgb(237, 231, 231);
       padding: 20px;
@@ -83,6 +83,35 @@
       text-align: center;
       overflow: auto;
     }
+    img {
+      max-width: 90%;
+      height: auto;
+    }
+
+    form{
+    padding-top: 20px;
+    display: flex;
+    gap: 20px;
+    font-size: 10px;
+    display: flex;
+    align-items: center;
+}
+form input{
+    border-radius: 10px;
+    padding-left: 10px;
+    height: 35px;
+}
+form textarea{
+    height: 70px;
+}
+
+button{
+    padding: 10px;
+    text-align: center;
+    align-items: center ;
+    margin: auto;
+    margin-top: 10px;
+}
   </style>
 </head>
 <body>
@@ -114,6 +143,30 @@
       
     </div>
   </div>
+</section>
+<section>
+  <div class="Contact">
+            <h1>Contact Me</h1>
+            <div class="form">
+                <form>
+                    <h1>Name:</h1>
+                    <input type="text" placeholder="Enter Your Name" required>
+                </form>
+                <form >
+                    <h1>Email:</h1>
+                    <input type="text" placeholder="Enter Your E-mail" type="email" required>
+                </form>
+                <form >
+                    <h1>Message:</h1>
+                    <textarea name="Message" id=""></textarea>
+                </form>
+                <button type="submit">Submit</button>
+         </div>
+         </section>
+         <!-- Contact Ends Here -->
+         <footer>
+            © 2025 Abhiral Rimal. All rights reserved. No part of this work may be reproduced, distributed, or transmitted in any form or by any means without the prior written permission of the copyright owner.
+        </footer>
 </section>
 </body>
 </html>
