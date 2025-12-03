@@ -1,24 +1,22 @@
-/* ----------------------------------------- */
-/* 1. MOBILE MENU TOGGLE                     */
-/* ----------------------------------------- */
+
 
 const menuButton = document.getElementById('menu-button');
 const navLinks = document.querySelector('.nav-links');
 
 function toggleMenu() {
-    // Toggle visibility of nav links
+   
     navLinks.classList.toggle('open');
 
-    // Update icon and accessibility attribute
+    
     const isExpanded = navLinks.classList.contains('open');
     menuButton.setAttribute('aria-expanded', isExpanded);
-    menuButton.innerHTML = isExpanded ? '✕' : '☰'; // X or Hamburger
+    menuButton.innerHTML = isExpanded ? '✕' : '☰'; 
 }
 
-// Click event for mobile menu
+
 menuButton.addEventListener('click', toggleMenu);
 
-// Close menu when clicking a link (mobile UX improvement)
+
 navLinks.querySelectorAll('a').forEach(link => {
     link.addEventListener('click', () => {
         if (navLinks.classList.contains('open')) {
@@ -28,11 +26,9 @@ navLinks.querySelectorAll('a').forEach(link => {
 });
 
 
-/* ----------------------------------------- */
-/* 2. SCROLL PROGRESS INDICATOR (OPTIONAL)   */
-/* ----------------------------------------- */
 
-// Creates a progress bar element if not already in HTML
+
+
 const scrollBar = document.createElement('div');
 scrollBar.id = 'scroll-progress';
 scrollBar.style.position = 'fixed';
@@ -56,17 +52,15 @@ function updateScrollIndicator() {
 window.addEventListener('scroll', updateScrollIndicator);
 
 
-/* ----------------------------------------- */
-/* 3. CONTACT FORM VALIDATION                */
-/* ----------------------------------------- */
 
-const contactForm = document.getElementById('contact-form-id');  // make sure your form has this ID
-const messageDiv = document.getElementById('form-message');      // feedback message div
+
+const contactForm = document.getElementById('contact-form-id');  
+const messageDiv = document.getElementById('form-message');      
 
 if (contactForm && messageDiv) {
 
     contactForm.addEventListener('submit', function(event) {
-        event.preventDefault();  // prevent refresh
+        event.preventDefault();  
 
         const nameInput = document.getElementById('name').value.trim();
         const emailInput = document.getElementById('email').value.trim();
@@ -77,7 +71,7 @@ if (contactForm && messageDiv) {
         } else {
             messageDiv.textContent = 'Thank you for your message! I will be in touch shortly.';
             messageDiv.style.color = 'green';
-            contactForm.reset(); // clear fields
+            contactForm.reset(); 
         }
     });
 }
